@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "prettier.bracketSameLine": true,
+  "prettier.embeddedLanguageFormatting": "off",
+  "prettier.insertPragma": true,
+  "prettier.jsxSingleQuote": false,
+  "tailwindcss-intellisense.trace.server": "messages"
+}
