@@ -84,3 +84,28 @@ def Evenly( n):
 n = 4124
 Odd = Evenly(n)
 print(Odd)
+
+############
+
+
+# For loops
+ 
+ 
+def OddFor(n):
+    
+    counter = 0
+    
+    digit =str(n)
+    
+    for digits in digit[::-1]:
+        id = int(digits)
+        
+        counter = counter + 1
+        
+    return counter
+    
+
+
+n = 56451156451
+he = OddFor(n)
+print(" welcoome" ,he)
