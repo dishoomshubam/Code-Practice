@@ -47,3 +47,31 @@ h1, h2 = 11, 21
 
 call = find_the_gcd(h1, h2)
 print(call)
+
+
+
+def gcd_find(s1,s2):
+    
+    # intli gcd 1 
+    
+    gcd = 1
+    
+    # for loops
+    
+    
+    for i in range(1, min(s1,s2) +1):
+        
+        if s1 % i == 0 and s2 % i == 0:
+            
+            gcd = i
+            
+    return gcd
+    
+    
+
+
+s1,s2 = 22 ,12
+
+call = gcd_find(s1, s2)
+
+print(call)
