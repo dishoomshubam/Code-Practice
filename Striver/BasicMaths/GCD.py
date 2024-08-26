@@ -67,11 +67,31 @@ def gcd_find(s1,s2):
             
     return gcd
     
-    
-
 
 s1,s2 = 22 ,12
 
 call = gcd_find(s1, s2)
 
 print(call)
+
+
+
+# LMC and GCD
+
+import math
+def lmc_gcd(a,b):
+    
+    gcd_value = math.gcd(a,b)
+    
+    
+    lcm_value = abs(a * b ) // gcd_value
+    
+    return [lcm_value, gcd_value]
+    
+    
+    
+    
+    
+    
+a, b = 10 , 5
+print(lmc_gcd(a,b))
