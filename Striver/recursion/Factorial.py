@@ -35,3 +35,42 @@ def fact(X):
 
 X = 22
 print(fact(X))
+
+
+def factorial_numbers(n):
+    factorial_list = []
+    fact = 1
+    i = 1
+
+    while fact <= n:
+        factorial_list.append(fact)
+        i += 1
+        fact *= i
+
+    return factorial_list
+
+
+def factorial(n):
+
+    fact_num = []
+    facts = 1
+    i = 1
+
+    while facts <= n:
+
+        fact_num.append(facts)
+
+        i += 1
+
+        facts *= i
+
+    return fact_num
+
+
+# Example usage:
+n = 3
+# print(factorial_numbers(n))
+print(factorial(n))  # Output: [1, 2]
+
+n = 10
+print(factorial_numbers(n))  # Output: [1, 2, 6]
