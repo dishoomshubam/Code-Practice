@@ -1,27 +1,34 @@
-# arr = [1,2,3,4,5]
-# ind = 2
-# output arr = [3,2,1,5,4]
+def SelctionShort(arr):
+
+    # arr2 = []
+    # # inncer loop
+    # for i in range(len(arr)):
+    #     print(arr[i], end="")
+
+    #     for j in arr[i]:
+    #         if j == min:
+    #             arr2.append(j)
+    #         else:
+    #             False
+    # return arr2
+
+    # inncer loop
+    for i in range(len(arr)):
+
+        # Find the minimum element in the remaining unsorted array
+        min_index = i
+
+        # outer loops
+        for j in range(i + 1, len(arr)):
+
+            if arr[j] < arr[min_index]:
+                min_index = j
+
+        # Swap the found minimum element with the first element
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+    return arr
 
 
-def ReversNumber(arr, n):
-
-    for i in range(n):
-        print(arr[i], end=" ")
-
-    print()
-
-
-def reverNumber(arr, n):
-    num = [0] * n
-
-    for x in range(n - 1, -1, -1):
-
-        num[n - x - 1] = arr[x]
-
-    ReversNumber(num, x)
-
-
-arr = [1, 2, 3, 4, 5]
-ind = 2
-n = len(arr)
-print(reverNumber(arr, n))
+arr = [5, 6, 3, 4, 2, 1, 6, 7, 8]
+print(SelctionShort(arr))
