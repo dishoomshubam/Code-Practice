@@ -26,6 +26,8 @@ def partition(arr, low, high):
     return i + 1
 
 
+
+
 arr = [4, 2, 4, 1, 6, 7]
 n = len(arr)
 quick_sort(arr, 0, n - 1)
